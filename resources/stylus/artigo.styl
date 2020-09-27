@@ -1,0 +1,182 @@
+#article-heading-box
+  position absolute
+  z-index 0
+  top 0
+  left 0
+
+.article-cover
+  width 90em
+  height 47.25em
+  margin-top 23em
+  margin-left calc(50% - 45em)
+  border-radius(1.5em)
+  object-fit cover
+
+  @media (max-width 1366px)
+    width 75em
+    height 40em
+    margin-top 19em
+    margin-left calc(50% - 37.5em)
+
+  @media (max-width 900px)
+    width 92%
+    height 36em
+    margin-top 17em
+    margin-left 4%
+
+  @media (max-width 768px)
+    margin-top 15em
+  
+  @media (max-width 600px)
+    width 86%
+    height auto
+    margin-top 12em
+    margin-left 7%
+
+.article-title
+  width 20em // 90em / 4.2em (font-size)
+  margin 1.65em auto 0 auto
+  font-size 4.5em
+  font-weight 900
+
+  @media (max-width 1366px)
+    width 18.75em
+    margin-top 1.55em
+    font-size 4em
+
+  @media (max-width 900px)
+    width 92%
+
+  @media (max-width 768px)
+    margin-top 1.5em
+    font-size 3.5em
+
+  @media (max-width 600px)
+    width 86%
+
+.publication-date
+  width 60em // 90em / 1.5em (font-size)
+  margin 1.5em auto 6em auto
+  font-size 1.5em
+  font-weight 600
+  color rgba(text-color, .65)
+
+  @media (max-width 1366px)
+    width 50em
+    margin 1.3em auto 5em auto
+
+  @media (max-width 900px)
+    width 92%
+  
+  @media (max-width 768px)
+    margin 1.1em auto 4em auto
+
+  @media (max-width 600px)
+    width 86%
+
+.article-content
+  width 90em
+  margin 0 auto
+
+  @media (max-width 1366px)
+    width 75em
+
+  @media (max-width 900px)
+    width 92%
+
+  @media (max-width 600px)
+    width 86%
+
+  img
+    max-width 100%
+    margin-top mg-top = 2.2em
+    margin-bottom mg-top
+
+  h1
+  h2
+  h3
+  h4
+  h5
+    font-weight 900
+    margin-top .75em
+    margin-bottom .8em
+
+  p
+    margin-bottom 1.1em
+    font-size 1.7em
+    font-weight 400
+    line-height 1.55em
+
+    @media (max-width 768px)
+      font-size 1.6em
+
+  h1
+    font-size 3.5em
+
+  h2
+    font-size 3.25em
+
+  h3
+    font-size 3em
+
+  h4
+    font-size 2.5em
+  
+  h5
+    font-size 2.25em
+
+  blockquote
+    p
+      text-indent .4em
+      font-style italic
+      background-color #f0f0f0
+      border-top 1px solid #ddd
+
+      &::before
+      &::after
+        content '"'
+
+.end-buttons
+  width 90em
+  margin 6em auto 0 auto
+  flex-parent(row, wrap, flex-start)
+
+  @media (max-width 1366px)
+    width 75em
+
+  @media (max-width 900px)
+    width 92%
+
+  @media (max-width 768px)
+    margin-top 5em
+
+  @media (max-width 600px)
+    width 86%
+    justify-content space-between
+
+  .opt-btn
+    font-size 1.7em
+    font-weight 700
+    padding 1.05em 1.7em .95em 1.7em
+    border-radius(.5em)
+    background-color #ddd
+    cursor pointer
+
+    @media (min-width 601px)
+      &:not(:last-child)
+        margin-right 1.75em
+
+    @media (max-width 600px)
+      padding .9em 0 .8em 0
+      flex-grow 1
+      text-align center
+
+      &:first-child
+        margin-right .45em
+
+      &:last-child
+        margin-left .45em
+
+    &.highlighted-btn
+      color reversed-text-color
+      background-color theme-color
