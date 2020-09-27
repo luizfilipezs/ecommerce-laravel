@@ -2,10 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-*/
+// Simple routes
 
-Route::view('/', 'inicio');
+Route::view('/', 'inicio')->name('inicio');
+Route::view('/sobre-nos', 'sobre-nos')->name('sobre-nos');
+Route::view('/videos', 'videos')->name('videos');
